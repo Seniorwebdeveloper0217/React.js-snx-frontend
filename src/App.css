@@ -74,4 +74,17 @@ hr {
   border-width: 2px;
   border-style: solid;
   border-color: #6f6e98;
+  color: #090816;
+  padding: 5px;
+}
+
+.voting-duration-box {
+  background-color: #6f6e98;
+  border-radius: 10px;
+  justify-content: center;
+  text-align: center;
+  margin: 10px 5px;
+  padding: 10px 5px;
+  width: 75%;
+  color: white;
 }

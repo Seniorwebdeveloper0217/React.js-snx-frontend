@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {Link} from "react-router-dom"
-import Header from "../components/Header";
+import ProposalDescription from "../components/ProposalDescription";
 
 class ProposalsPage extends Component {
     state = {
@@ -23,7 +23,12 @@ class ProposalsPage extends Component {
                 </div>
                 <hr/>
                 <div className="row">
-                    
+                    <div className="col-md-4">
+                        <ProposalDescription/>
+                    </div>
+                    <div className="col-md-4">
+                        <ProposalDescription/>
+                    </div>
                 </div>
             </div>
         )

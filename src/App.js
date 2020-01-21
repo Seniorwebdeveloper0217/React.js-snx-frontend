@@ -3,7 +3,9 @@ import { BrowserRouter, Route } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import MembersPage from "./pages/MembersPage";
 import ProposalsPage from "./pages/ProposalsPage";
+import ProposalDetailPage from "./pages/ProposalDetailPage";
 import Header from "./components/Header"
+
 
 import "./App.css"
 
@@ -21,6 +23,7 @@ class App extends Component {
           <Route exact path = '/' component={HomePage} />
           <Route exact path = '/members' component={MembersPage} />
           <Route exact path = '/proposals' component={ProposalsPage} />
+          <Route exact path = '/proposalDetails' component={ProposalDetailPage} />
         </BrowserRouter>
       </div>
       )

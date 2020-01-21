@@ -1,14 +1,12 @@
-import React, {Component} from "react";
+import React from "react";
 
-class ProposalDetailPage extends Component {
 
-    render() {
-        return (
-            <div>
-                ProposalDetailPage
-            </div>
-        )
-    }
+const ProposalDetailPage = (props) => {
+    return (
+        <div className="container">
+            <h3>MGP 34—$5,000 for Moloch v1/v2 Security Review</h3>
+        </div>
+    )
 }
 
 export default ProposalDetailPage;
