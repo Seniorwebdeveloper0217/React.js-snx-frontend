@@ -1,41 +1,46 @@
-import React, {Component} from "react";
-import { Link } from 'react-router-dom';
+import React from 'react';
+import { BrowserRouter as Router, Route, Switch, Redirect, Link } from "react-router-dom";
+import { Grid, Icon, Dropdown, Form, Button, Loader} from "semantic-ui-react";
 
-class Header extends Component {
+const Header = () => {
 
-    render() {
-        return (
-            <div className="container">
-                <nav class="navbar navbar-expand-lg">
-                    <a class="navbar-brand" href="#">Navbar</a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item dropdown fixed-right">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Dropdown link
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                            </div>
-                        </li>
-                        </ul>
-                    </div>
-                </nav>
-            </div>
-        )
-    }
+    return (
+        <div id="header">
+            <Grid
+                container
+                columns={3}
+                stackable
+                verticalAlign="middle">
+                <Grid.Column textAlign="center">
+                    <a
+                        href="/"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        <Icon name="discourse" size="big"/>
+                    </a>
+                    <a
+                        href="/"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        <Icon name="twitter" size="big"/>
+                    </a>
+                </Grid.Column>
+                <Grid.Column textAlign="center" className="logo">
+                    <Router>
+                        <Link to="/">Syntetix</Link>
+                    </Router>
+                </Grid.Column>
+                <Grid.Column textAlign="center" className="dropdown">
+                    <Dropdown
+                        className="right_dropdown"
+                        text={"Web3 Login"}>
+                        <Dropdown.Menu className="menu blurred" direction="left">
+                            {}</Dropdown.Menu>
+                    </Dropdown>
+                </Grid.Column>
+            </Grid>
+        </div>
+    )
 }
 
 export default Header;
