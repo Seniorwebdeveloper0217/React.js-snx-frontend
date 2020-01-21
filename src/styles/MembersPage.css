@@ -1,0 +1,15 @@
+.member{
+    margin: 1.5%;
+    text-align: center;
+}
+.member img {
+    border-radius: 50%;
+    width: 100%;
+ 
+}
+.member p{
+    font-weight: bold;
+}
+.member p.shares{
+    opacity: 0.5;
+}
