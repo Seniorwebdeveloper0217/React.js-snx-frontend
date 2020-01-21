@@ -1,15 +1,12 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import Header from "../components/Header";
 
 
 class HomePage extends Component {
   
   render() {
     return(
-
-        <div className="container-fluid background-colour vh-100">
-            <Header/>
+        <React.Fragment>
             <div className="container mt-5 text-center">
                 <div className="row">
                     <div className="col-md-6">
@@ -48,9 +45,8 @@ class HomePage extends Component {
                         <h3>Share Value</h3>
                     </div>
                 </div>
-            </div>
-      </div>
-     
+            </div>    
+        </React.Fragment>
       )
 
   }

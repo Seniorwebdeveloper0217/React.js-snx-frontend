@@ -7,19 +7,14 @@ class MembersPage extends Component {
     }
     render() {
         return(
-            <div className="container-fluid background-colour vh-100">
-                <Header/>
-                <div className="container">
-                    <br/>
-                    <br/>
-                    <p className="font-weight-light">73 Members</p>
-                    <br/>
-                    <br/>
-                    <p className="font-weight-bolder">100+ Spartans</p>
-                    <hr/>
-                </div>
-
-
+            <div className="container">
+                <br/>
+                <br/>
+                <p className="snx-pink">73 Members</p>
+                <br/>
+                <br/>
+                <p className="font-weight-bolder">100+ Spartans</p>
+                <hr/>
             </div>
         );
     }

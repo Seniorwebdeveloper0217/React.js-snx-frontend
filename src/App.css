@@ -31,7 +31,11 @@ h3 {
 }
 
 hr {
-  border: 0.2px solid white;
+  border: 0.5px solid #6f6e98;
+}
+
+.snx-pink {
+  color: #6f6e98
 }
 
 /* Home Page */
@@ -63,3 +67,11 @@ hr {
   opacity: 1;
 }
 
+/* Proposal */
+
+.proposal-box {
+  background-color: white;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #6f6e98;
+}
