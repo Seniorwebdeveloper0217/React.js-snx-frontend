@@ -2,6 +2,9 @@
 .container-fluid{
   color: white;
 }
+html body{
+  background-color: #090816 ;
+}
 
 
 .icon{
@@ -43,9 +46,9 @@ a {
 }
 
 /* Home Page */
-.background-colour {
+/* .background-colour {
   background-color: #090816;
-}
+} */
 
 .stat-banner {
   justify-content: center;
@@ -87,7 +90,7 @@ a {
   border-radius: 10px;
   justify-content: center;
   text-align: center;
-  margin: 10px 5px;
+  margin: auto;
   padding: 10px 5px;
   width: 75%;
   color: white;

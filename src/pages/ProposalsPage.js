@@ -33,6 +33,16 @@ class ProposalsPage extends Component {
                             <ProposalDescription/>
                         </Link>
                     </div>
+                    <div className="col-md-4">
+                        <Link to="/proposalDetails">
+                            <ProposalDescription/>
+                        </Link>
+                    </div>
+                    <div className="col-md-4">
+                        <Link to="/proposalDetails">
+                            <ProposalDescription/>
+                        </Link>
+                    </div>
                 </div>
             </div>
         )
