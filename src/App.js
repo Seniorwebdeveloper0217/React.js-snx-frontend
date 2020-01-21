@@ -14,7 +14,6 @@ import Wrapper from "./components/Wrapper";
 import Background from "./components/Background";
 
 import 'semantic-ui-css/semantic.min.css'
-import "./App.css"
 import "./styles/index.scss"
 import "./styles/style_1.css"
 
