@@ -1,0 +1,65 @@
+
+.container-fluid{
+  color: white;
+}
+
+
+.icon{
+  margin: 10px;
+}
+.dropdown-toggle{
+  background-color: teal !important;
+
+  color: white;
+  font-family:'Arial Narrow Bold', sans-serif;
+}
+.dropdown-toggle:hover{
+  color: white;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1em;
+  text-transform: uppercase;;
+}
+
+hr {
+  border: 0.2px solid white;
+}
+
+/* Home Page */
+.background-colour {
+  background-color: #090816;
+}
+
+.stat-banner {
+  justify-content: center;
+  text-align: center;
+  background: rgba(255,255,255,0.5);;
+  padding: 10px;
+}
+
+.main-btn {
+  padding: 5px;
+  color: black;
+  justify-content: center;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(232, 231, 253);
+  cursor: pointer;
+  border-radius: 2px;
+  padding: 16px 48px;
+  margin: 10px 0px;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgb(247, 244, 255) 0px 2px 2px 2px;
+  opacity: 1;
+}
+
