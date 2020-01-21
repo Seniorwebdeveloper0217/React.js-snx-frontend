@@ -24,10 +24,14 @@ class ProposalsPage extends Component {
                 <hr/>
                 <div className="row">
                     <div className="col-md-4">
-                        <ProposalDescription/>
+                        <Link to="/proposalDetails">
+                            <ProposalDescription/>
+                        </Link>
                     </div>
                     <div className="col-md-4">
-                        <ProposalDescription/>
+                        <Link to="/proposalDetails">
+                            <ProposalDescription/>
+                        </Link>
                     </div>
                 </div>
             </div>
