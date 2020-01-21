@@ -20,6 +20,7 @@ a{
 }
 .buttonstyle{
     border-color: pink;
+    border-radius: 50px;
 }
 .title{
     margin-left: 40px;

@@ -36,7 +36,7 @@ class Header extends Component {
                         </li>
                         <li className="nav-item dropdown fixed-right">
                             <a className="nav-link dropdown-toggle buttonstyle" href="/" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Dropdown link
+                            Web3 Login
                             </a>
                             <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                             <a className="dropdown-item" href="/">Action</a>
