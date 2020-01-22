@@ -33,3 +33,17 @@ a{
 .collapse:not(.show) {
     display: block;
 }
+.main-btn a {
+    color: black;
+    margin: auto;
+}
+
+@media (max-width: 576px) {
+   
+    .main-btn {
+        max-width: 60% !important;
+        display: block;
+        text-align: center;
+        margin: auto !important;
+    }
+}

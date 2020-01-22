@@ -18,14 +18,14 @@ class HomePage extends Component {
                     </div>
                     <div className="col-md-6">
                         <div className="row">
-                            <div className="col-md-4">
-                                <Link to="/members" className="main-btn">Members</Link>
+                            <div className="col-md-4 main-btn">
+                                <Link to="/members">Members</Link>
                             </div>
-                            <div className="col-md-4 align-middle">
-                                <Link to="/proposals" className="main-btn">Proposals</Link>
+                            <div className="col-md-4 main-btn align-middle">
+                                <Link to="/proposals">Proposals</Link>
                             </div>
-                            <div className="col-md-4">
-                                <Link to="/pool" className="main-btn">Pool</Link>
+                            <div className="col-md-4 main-btn">
+                                <Link to="/pool">Pool</Link>
                             </div>
                         </div>
                     </div>
