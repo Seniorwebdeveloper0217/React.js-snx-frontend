@@ -66,16 +66,16 @@ a {
   padding: 5px;
   color: black;
   justify-content: center;
-  border-width: 4px;
+  border-width: 2px;
   border-style: solid;
-  border-color: pink;
+  border-color: #6f6e98;
+  margin: 5px;
   cursor: pointer;
   border-radius: 4px;
   padding: 16px 48px;
   margin: 10px 0px;
   align-items: center;
   background-color: rgb(255, 255, 255);
-  box-shadow: rgb(247, 244, 255) 0px 2px 2px 2px;
   opacity: 1;
 }
 
