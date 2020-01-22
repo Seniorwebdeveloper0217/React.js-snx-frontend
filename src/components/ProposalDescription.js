@@ -19,7 +19,7 @@ const ProposalDescription = (props) => {
                 Voting ends: 2 days
             </div>
             <div className="row mt-1">
-                <ProgressBar variant="success" now={35} />
+                <ProgressBar />
             </div>
             {/* TODO add progress bar etc */}
         </div>

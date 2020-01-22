@@ -2,10 +2,21 @@ import React, { Component } from 'react';
 import {Link} from "react-router-dom"
 import ProposalDescription from "../components/ProposalDescription";
 import "../styles/ProposalsPage.css";
+import GrantsDAO from "../contracts/GrantsDAO";
+import contract_config from "../contract_config.json";
 
 class ProposalsPage extends Component {
     state = {
         isLoading: true
+    }
+
+    componentDidMount = async() => {
+        console.log(this.props.data)
+        var web3 = this.props.web3;
+        console.log(web3);
+        var contract = new web3.eth.Contract(GrantsDAO.abi, contract_config.GrantsDAO_dev);
+        //var contractData = await trsContract.methods.getContractInfo(this.props.match.params.contractID).call()
+        //console.log(contractData)
     }
     render() {
         return (
