@@ -21,9 +21,15 @@ a{
     margin-right: 40px;
     margin-top: 20px;
     margin-bottom: 40px;
-    width: 700px;
+    
 }
 .title img{
-    width: 100%;
-    height: 100%;
+    width: 50%;
+}
+
+.navbar-expand-lg a {
+    text-align: center;
+}
+.collapse:not(.show) {
+    display: block;
 }

@@ -8,26 +8,23 @@ class Header extends Component {
 
     render() {
         return (
-            <div className = "header">
-            <div className="socialicon">
-                <SocialIcon  url="https://twitter.com/jaketrent" />
-                <SocialIcon  url="https://facebook.com/jaketrent" />
-                <SocialIcon  url="https://discord.com/jaketrent" />
-            </div>
+            
+            
             <div className="container">
+                
                 <nav className="navbar navbar-expand-lg">
+                    <div className="socialicon">
+                        <SocialIcon  url="https://twitter.com/jaketrent" />
+                        <SocialIcon  url="https://facebook.com/jaketrent" />
+                        <SocialIcon  url="https://discord.com/jaketrent" />
+                    </div>
                     <a className = "title" href ="/">
                         <img src = "images/title.png" />
                     </a>
 
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav mr-auto">
-                            <li className="nav-item active">
-                                <a className="nav-link" href="/">Home <span className="sr-only">(current)</span></a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="/">Link</a>
-                            </li>
+                            
                             <li className="nav-item dropdown fixed-right">
                                 <a className="nav-link dropdown-toggle buttonstyle" href="/" id="navbardrop" role="button" data-toggle="dropdown">
                                     Web3 Login
@@ -41,7 +38,6 @@ class Header extends Component {
                         </ul>
                     </div>
                 </nav>
-            </div>
             </div>
         )
     }
