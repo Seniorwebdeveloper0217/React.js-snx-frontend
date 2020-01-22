@@ -1,5 +1,8 @@
 import React from "react";
 
+// vote = () => {
+
+// }
 
 const ProposalDetailPage = (props) => {
     return (

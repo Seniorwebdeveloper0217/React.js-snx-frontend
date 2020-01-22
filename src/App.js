@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { BrowserRouter, Route } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import MembersPage from "./pages/MembersPage";
 import ProposalsPage from "./pages/ProposalsPage";
@@ -41,7 +41,7 @@ class App extends Component {
     return(
       <div className="container-fluid background-colour vh-100">
         <Header/>
-        <Switch>
+        <BrowserRouter>
           <Route exact path="/" render={(props) => {
                 return (<HomePage {...props} web3={this.state.web3} />)
               }} />
@@ -54,7 +54,7 @@ class App extends Component {
           <Route exact path="/proposalDetails" render={(props) => {
                 return (<ProposalDetailPage {...props} web3={this.state.web3} />)
               }} />
-        </Switch>
+        </BrowserRouter>
       </div>
       )
   }
