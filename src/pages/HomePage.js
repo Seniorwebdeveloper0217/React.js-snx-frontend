@@ -17,7 +17,7 @@ class HomePage extends Component {
                         <h2>$548.19</h2>
                     </div>
                     <div className="col-md-6">
-                        <div className="row">
+                        <div className="button-bundle">
                             <div className="col-md-4 main-btn">
                                 <Link to="/members">Members</Link>
                             </div>

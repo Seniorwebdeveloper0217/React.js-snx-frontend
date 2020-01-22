@@ -8,16 +8,14 @@ class Header extends Component {
 
     render() {
         return (
-            
-            
-            <div className="container">
-                
+            <div className = "row col-md-12">
+            <div className="col-md-2 socialicon">
+                <SocialIcon  url="https://twitter.com/jaketrent" />
+                <SocialIcon  url="https://facebook.com/jaketrent" />
+                <SocialIcon  url="https://discord.com/jaketrent" />
+            </div>
+            <div className="col-md-7">
                 <nav className="navbar navbar-expand-lg">
-                    <div className="socialicon">
-                        <SocialIcon  url="https://twitter.com/jaketrent" />
-                        <SocialIcon  url="https://facebook.com/jaketrent" />
-                        <SocialIcon  url="https://discord.com/jaketrent" />
-                    </div>
                     <a className = "title" href ="/">
                         <img src = "images/title.png" />
                     </a>
@@ -38,6 +36,7 @@ class Header extends Component {
                         </ul>
                     </div>
                 </nav>
+            </div>
             </div>
         )
     }
