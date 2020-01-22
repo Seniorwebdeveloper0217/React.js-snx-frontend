@@ -43,7 +43,7 @@ a:hover {
 }
 a {
   color: white;
-  font-size: 22px;
+  font-weight: bold;
 }
 
 .snx-pink {
@@ -63,21 +63,37 @@ a {
 }
 
 .main-btn {
-  padding: 5px;
+  padding: 10px 30px;
   color: black;
   justify-content: center;
   border-width: 4px;
   border-style: solid;
-  border-color: pink;
+  border-color: rgb(232, 231, 253);
   cursor: pointer;
   border-radius: 4px;
-  padding: 16px 48px;
-  margin: 10px 0px;
+  margin: 10px 55%;
   align-items: center;
   background-color: rgb(255, 255, 255);
   box-shadow: rgb(247, 244, 255) 0px 2px 2px 2px;
   opacity: 1;
 }
+
+.main-btn a {
+  color: black;
+  margin: auto;
+}
+
+@media (max-width: 576px) {
+ 
+  .main-btn {
+      max-width: 60% !important;
+      display: block;
+      text-align: center;
+      margin-top: 10px;
+      margin: auto !important;
+  }
+}
+
 
 /* Proposal */
 

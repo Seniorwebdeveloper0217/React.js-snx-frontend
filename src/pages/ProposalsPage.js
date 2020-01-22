@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {Link} from "react-router-dom"
 import ProposalDescription from "../components/ProposalDescription";
+import "../styles/ProposalsPage.css";
 
 class ProposalsPage extends Component {
     state = {
