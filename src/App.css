@@ -39,6 +39,11 @@ hr {
 
 a:hover {
   text-decoration: none;
+  color: pink;
+}
+a {
+  color: white;
+  font-size: 22px;
 }
 
 .snx-pink {
