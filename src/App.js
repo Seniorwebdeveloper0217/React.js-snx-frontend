@@ -4,6 +4,7 @@ import HomePage from './pages/HomePage';
 import MembersPage from "./pages/MembersPage";
 import ProposalsPage from "./pages/ProposalsPage";
 import ProposalDetailPage from "./pages/ProposalDetailPage";
+import PoolPage from "./pages/PoolPage";
 import Header from "./components/Header"
 import getWeb3 from './utils/getWeb3'
 
@@ -53,6 +54,9 @@ class App extends Component {
               }} />
           <Route exact path="/proposalDetails" render={(props) => {
                 return (<ProposalDetailPage {...props} web3={this.state.web3} />)
+              }} />
+          <Route exact path="/pool" render={(props) => {
+                return (<PoolPage {...props} web3={this.state.web3} />)
               }} />
         </BrowserRouter>
       </div>

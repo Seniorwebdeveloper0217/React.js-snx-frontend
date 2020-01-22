@@ -11,13 +11,64 @@ class ProposalsPage extends Component {
     }
 
     componentDidMount = async() => {
-        console.log(this.props.data)
-        var web3 = this.props.web3;
-        console.log(web3);
-        var contract = new web3.eth.Contract(GrantsDAO.abi, contract_config.GrantsDAO_dev);
+        //console.log(this.props.data)
+        //var web3 = this.props.web3;
+        //console.log(web3);
+        //var contract = new web3.eth.Contract(GrantsDAO.abi, contract_config.GrantsDAO_dev);
         //var contractData = await trsContract.methods.getContractInfo(this.props.match.params.contractID).call()
         //console.log(contractData)
     }
+
+
+    // getProposals = async () => {
+    //     var web3 = this.props.web3;
+    //     //var ethers = this.props.ethers
+    //     var contract = new web3.eth.Contract(linkTRS.abi, contract_config.linkTRS_dev);
+    //     //let contract = new ethers.Contract(contract_config.linkTRS_dev, linkTRS.abi, ethers.getDefaultProvider());
+    //     var listings = [];
+        // await contract.methods.contractCounter().call().then(async (contractCounter) => {
+        //   console.log(contractCounter)
+        //   var contractAddress;
+        //   var offerExpiryTime;
+        //   for (var i = 0; i < contractCounter; i++) {
+        //     contractAddress = await contract.methods.getContractID(i).call();
+        //     offerExpiryTime = await contract.methods.getContractExpiryTime(contractAddress).call();
+        //     console.log(offerExpiryTime)
+        //     contract.methods.getContractByIndex(i).call((err, res) => {
+        //       if (res[0] === "0x0000000000000000000000000000000000000000") {
+        //         var status;
+        //         if (contract.methods.getContractID(i).call()) {
+        //           status = "Active"
+        //         } else {
+        //           status = "Expired"
+        //         }
+        //         var thisData = {
+        //           id: i,
+        //           address: contractAddress,
+        //           originalPrice: res[2],
+        //           startDate: res[3],
+        //           expiryDate: res[4],
+        //           interestRate: res[5],
+        //           amountOfLink: res[6],
+        //           status: status,
+        //           offerExpiry: offerExpiryTime,
+        //           minMargin: res[9]
+        //         }
+        //         var currentTime = Math.round((new Date()).getTime() / 1000);
+        //         if (offerExpiryTime - currentTime > 0) {
+        //           listings.push(thisData)
+        //         }
+        //       }
+        //     });
+        //   }
+        //   console.log(listings)
+        //   this.setState({ data: listings },
+        //     () => {
+        //       this.setState({ loading: false })
+        //     })
+        // })
+    //   }
+
     render() {
         return (
             <div className="container">
