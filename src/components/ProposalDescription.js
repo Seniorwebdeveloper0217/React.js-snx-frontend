@@ -1,4 +1,5 @@
 import React from 'react';
+import {ProgressBar} from 'react-bootstrap';
 
 
 const ProposalDescription = (props) => {
@@ -16,6 +17,9 @@ const ProposalDescription = (props) => {
             </div>
             <div className="voting-duration-box align-center">
                 Voting ends: 2 days
+            </div>
+            <div className="row mt-1">
+                <ProgressBar variant="success" now={35} />
             </div>
             {/* TODO add progress bar etc */}
         </div>
