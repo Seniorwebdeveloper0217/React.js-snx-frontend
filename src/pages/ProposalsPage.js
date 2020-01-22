@@ -12,21 +12,26 @@ class ProposalsPage extends Component {
 
     componentDidMount = async() => {
         //console.log(this.props.data)
-        //var web3 = this.props.web3;
-        //console.log(web3);
-        //var contract = new web3.eth.Contract(GrantsDAO.abi, contract_config.GrantsDAO_dev);
+        console.log(this.props);
+        var web3 = this.props.web3;
+        console.log(web3);
+        // this.getProposals();
+        var contract = new web3.eth.Contract(GrantsDAO.abi, contract_config.GrantsDAO_dev);
         //var contractData = await trsContract.methods.getContractInfo(this.props.match.params.contractID).call()
         //console.log(contractData)
     }
 
 
-    // getProposals = async () => {
-    //     var web3 = this.props.web3;
-    //     //var ethers = this.props.ethers
-    //     var contract = new web3.eth.Contract(linkTRS.abi, contract_config.linkTRS_dev);
-    //     //let contract = new ethers.Contract(contract_config.linkTRS_dev, linkTRS.abi, ethers.getDefaultProvider());
-    //     var listings = [];
-        // await contract.methods.contractCounter().call().then(async (contractCounter) => {
+    getProposals = async () => {
+        var web3 = this.props.web3;
+        var contract = new web3.eth.Contract(GrantsDAO.abi, contract_config.GrantsDAO_dev);
+        console.log(contract.methods);
+
+        await contract.methods.proposals().call().then(async (proposals) => {
+            var proposal;
+            for (var i = 0; i < proposals; i++) {
+                proposal = await contract.methods.getContractID(i).call();
+            }
         //   console.log(contractCounter)
         //   var contractAddress;
         //   var offerExpiryTime;
@@ -66,8 +71,8 @@ class ProposalsPage extends Component {
         //     () => {
         //       this.setState({ loading: false })
         //     })
-        // })
-    //   }
+        })
+      }
 
     render() {
         return (

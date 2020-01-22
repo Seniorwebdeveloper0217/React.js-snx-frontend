@@ -21,7 +21,12 @@ export async function initMetmask() {
   return web3
 }
 
-
+export async function getLocalWeb3() {
+  web3 = new Web3(new Web3.providers.HttpProvider('http://localhost:7545'));
+  console.log("web3");
+  console.log(web3)
+  return web3;
+}
 // export async function initToken() {
 //   if (!web3) {
 //     if (localStorage.getItem("loginType") === "metamask") {
